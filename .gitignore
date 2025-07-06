@@ -1,0 +1,33 @@
+# Node modules
+node_modules/
+
+# Environment files
+.env
+
+# Logs
+logs
+*.log
+
+# OS and IDE files
+.DS_Store
+.vscode/
+*.swp
+
+# Build output
+dist/
+build/
+
+# Coverage reports
+coverage/
+
+# npm & yarn lock files (optional)
+package-lock.json
+yarn.lock
+
+# Firebase secrets
+firebase-debug.log
+
+# AWS or cloud credentials (just in case)
+*.pem
+*.key
+*.aws
