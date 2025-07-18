@@ -21,11 +21,11 @@ export const createTask = async (req, res) => {
     }
 };
 
-// GET ALL TASKS FOR LOGGED-IN USER
+// ✅ GET ALL TASKS FOR LOGGED-IN USER
 export const getTask = async (req, res) => {
     try {
-        const task = await Task.find({ owner: req.user.id }).sort({ createdAt: -1 });
-        res.json({ success: true, task });
+        const tasks = await Task.find({ owner: req.user.id }).sort({ createdAt: -1 });
+        res.json({ success: true, tasks }); // ✅ Fixed key: 'tasks' (not 'task')
     } catch (err) {
         res.status(500).json({ success: false, message: err.message });
     }

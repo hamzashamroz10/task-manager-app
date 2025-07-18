@@ -4,7 +4,7 @@ import User from '../models/userModel.js';
 const JWT_SECRET = process.env.JWT_SECRET;
 
 export default async function authMiddleware(req, res, next) {
-    const authHeader = req.headers.authorization; // ✅ fixed property name
+    const authHeader = req.headers.authorization; 
 
     if (!authHeader || !authHeader.toLowerCase().startsWith('bearer')) {
         return res.status(401).json({
@@ -26,7 +26,7 @@ export default async function authMiddleware(req, res, next) {
             });
         }
 
-        req.user = user; // ✅ attach user to request
+        req.user = user; 
         next();
 
     } catch (err) {
