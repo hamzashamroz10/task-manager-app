@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { UserPlus, Mail, Lock } from 'lucide-react';
 import axios from 'axios';
 
-const API_URL = 'http://localhost:7000';
+const API_URL = 'https://task-manager-app-d383.vercel.app';
 const INITTIAL_FORM = { name: "", email: "", password: "" };
 
 const FIELDS = [

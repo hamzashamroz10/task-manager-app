@@ -4,7 +4,7 @@ import { ChevronLeft, LogOut, Mail, Save, Shield, User, UserCircle, Lock } from 
 import { useNavigate } from 'react-router'
 import axios from 'axios'
 
-const API_URL = 'http://localhost:7000'
+const API_URL = 'https://task-manager-app-d383.vercel.app'
 
 const personalFields = [
   { name: "name", type: "text", placeholder: "Full Name", icon: User },

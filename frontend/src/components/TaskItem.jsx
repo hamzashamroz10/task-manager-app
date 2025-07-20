@@ -7,7 +7,7 @@ import TaskModal from './TaskModal';
 
 
 
-const API_BASE = 'http://localhost:7000/api/tasks'
+const API_BASE = 'https://task-manager-app-d383.vercel.app/api/tasks'
 
 const MENU_OPTIONS = [
     { action: "edit", label: "Edit Task", icon: <Edit2 size={14} className="text-purple-600" /> },

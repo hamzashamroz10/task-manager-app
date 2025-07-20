@@ -17,7 +17,7 @@ const Login = ({ onSwitchMode, onSubmit }) => {
   const [formData, setFormData] = useState(INITTIAL_FORM)
   const [rememberMe, setRememberMe] = useState(false)
 
-  const url = 'http://localhost:7000' // ✅ Make sure this is declared before useEffect
+  const url = 'https://task-manager-app-d383.vercel.app' 
 
   useEffect(() => {
     const token = localStorage.getItem("token")
