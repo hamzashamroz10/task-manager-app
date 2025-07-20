@@ -4,7 +4,7 @@ import { useOutletContext } from 'react-router-dom'
 import TaskItem from '../components/TaskItem'
 import TaskModal from '../components/TaskModal'
 import axios from 'axios'
-const API_BASE = 'https://task-manager-app-d383.vercel.app//tasks'
+const API_BASE = 'https://task-manager-app-d383.vercel.app/api/tasks'
 
 const STATS = [
   { key: "total", label: "Total Tasks", icon: HomeIcon, iconColor: "bg-purple-100 text-purple-600", valueKey: "total", gradient: true },
