@@ -1,7 +1,7 @@
 import { AlignLeft, Calendar, CheckCircle, Flag, PlusCircle, Save, X } from 'lucide-react';
 import React, { useCallback, useEffect, useState } from 'react'
 
-const API_BASE = 'hhttps://task-manager-app-d383.vercel.app/tasks'
+const API_BASE = 'https://task-manager-app-d383.vercel.app/api/tasks'
 
 
 const DEFAULT_TASK = {

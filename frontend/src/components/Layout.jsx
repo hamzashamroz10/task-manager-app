@@ -17,7 +17,7 @@ const Layout = ({ user, onLogout }) => {
       const token = localStorage.getItem('token')
       if (!token) throw new Error("No auth token found")
 
-      const { data } = await axios.get("http://localhost:7000/api/tasks/gp", {
+      const { data } = await axios.get("https://task-manager-app-d383.vercel.app/api/tasks/gp", {
         headers: { Authorization: `Bearer ${token}` } 
       })
      
